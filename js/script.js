@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     // Horarios específicos para cada materia, grupo y subgrupo
-    const horariosMaterias = {
+        const horariosMaterias = {
         "MED200": { // Código de la materia
             "A1": { 
                 "Lunes": ["11:30 - 12:15", "12:15 - 13:00"], 
@@ -421,7 +421,142 @@ document.addEventListener("DOMContentLoaded", function () {
             "Sábado": ["07:00 - 07:45", "07:45 - 08:30", "08:30 - 09:15", "09:15 - 10:00"],     
           }, 
         }
-        };
+        
+        // ... (resto de los horarios de las materias)
+    };
+
+    // Textos personalizados para cada materia, grupo y subgrupo
+    const textosPersonalizados = {
+        "MED200": {
+            "A1": "Dr. Machado",
+            "A2": "Dr. Machado",
+            "A3": "Dr. Machado",
+	    "B1": "Dr. Sangüeza",
+	    "B2": "Dr. Sangüeza",
+            "B3": "Dr. Sangüeza",
+            "C1": "Dr. Sangüeza",
+	    "C2": "Dr. Sangüeza",
+            "C3": "Dr. Sangüeza",
+            "D1": "Dr. Machado",
+            "D2": "Dr. Machado",
+	    "D3": "Dr. Machado",
+	    "E1": "Dr. Machado",
+            "E2": "Dr. Machado",
+            "E3": "Dr. Machado",
+	    "F1": "Dr. Machado",
+	    "F2": "Dr. Machado",
+	    "F3": "Dr. Machado",
+            // Agrega más textos para otros grupos y subgrupos
+        },
+        "MED201": {
+            "A1": "Dra. Chely",
+            "A2": "Dra. Chely",
+            "A3": "Dra. Chely",
+	    "B1": "Dra. Araúz",
+	    "B2": "Dra. Araúz",
+            "B3": "Dra. Araúz",
+            "C1": "Dra. Chely",
+	    "C2": "Dra. Chely",
+            "C3": "Dra. Chely",
+            "D1": "Dra. Chely",
+            "D2": "Dra. Chely",
+	    "D3": "Dra. Chely",
+	    "E1": "Dra. Araúz",
+            "E2": "Dra. Araúz",
+            "E3": "Dra. Araúz",
+	    "F1": "Dra. Tapia",
+	    "F2": "Dra. Tapia",
+	    "F3": "Dra. Tapia",
+            // Agrega más textos para otros grupos y subgrupos
+},
+        "MED202": {
+            "A1": "Invitado",
+            "A2": "Invitado",
+            "A3": "Invitado",
+	    "B1": "Dr. Williams",
+	    "B2": "Dr. Williams",
+            "B3": "Dr. Williams",
+            "C1": "Invitado",
+	    "C2": "Invitado",
+            "C3": "Invitado",
+            "D1": "Dr. Méndez",
+            "D2": "Dr. Méndez",
+	    "D3": "Dr. Méndez",
+	    "E1": "Invitado",
+            "E2": "Invitado",
+            "E3": "Invitado",
+	    "F1": "Dr. Méndez",
+	    "F2": "Dr. Méndez",
+	    "F3": "Dr. Méndez",
+            // Agrega más textos para otros grupos y subgrupos
+},
+        "MED203": {
+            "A1": "Dra. Quiroz",
+            "A2": "Dra. Quiroz",
+            "A3": "Dra. Quiroz",
+	    "B1": "Dra. Pinto",
+	    "B2": "Dra. Pinto",
+            "B3": "Dra. Pinto",
+            "C1": "Dra. Quiroz",
+	    "C2": "Dra. Quiroz",
+            "C3": "Dra. Quiroz",
+            "D1": "Dra. Pinto",
+            "D2": "Dra. Pinto",
+	    "D3": "Dra. Pinto",
+	    "E1": "Dra. Hidalgo",
+            "E2": "Dra. Hidalgo",
+            "E3": "Dra. Hidalgo",
+	    "F1": "Dra. Quiroz",
+	    "F2": "Dra. Quiroz",
+	    "F3": "Dra. Quiroz",
+	    "G1": "Invitado",
+	    "G2": "Invitado",
+	    "G3": "Invitado",
+},
+        "MED209": {
+            "A1": "Dr. Cuéllar",
+            "A2": "Dr. Cuéllar",
+            "A3": "Dr. Cuéllar",
+	    "B1": "Dra. Quiroz",
+	    "B2": "Dra. Quiroz",
+            "B3": "Dra. Quiroz",
+            "C1": "Dra. Quiroz",
+	    "C2": "Dra. Quiroz",
+            "C3": "Dra. Quiroz",
+            "D1": "Dra. Araúz",
+            "D2": "Dra. Araúz",
+	    "D3": "Dra. Araúz",
+	    "E1": "Dr. Ortiz",
+            "E2": "Dr. Ortiz",
+            "E3": "Dr. Ortiz",
+	    "F1": "Dr. Saavedra",
+	    "F2": "Dr. Saavedra",
+	    "F3": "Dr. Saavedra",
+            // Agrega más textos para otros grupos y subgrupos
+},
+        "SAP200": {
+            "A1": "Dr. Leaño",
+	    "B1": "Invitado",
+            "C1": "Dr. Leaño",
+            "D1": "Dr. Leaño",
+	    "E1": "Dr. Leaño",
+	    "F1": "Dr. Prieto",
+
+            // Agrega más textos para otros grupos y subgrupos
+},
+        "SAP300": {
+            "A1": "Dr. Sánchez",
+	    "B1": "Dr. Méndez",
+            "C1": "Dra. Zambrana",
+ 
+            // Agrega más textos para otros grupos y subgrupos
+
+            // Agrega más textos para otros grupos y subgrupos
+
+        },
+        // Agrega más materias y sus textos personalizados
+    };
+
     // Horarios disponibles
     const horarios = [
         "07:00 - 07:45", "07:45 - 08:30", "08:30 - 09:15", "09:15 - 10:00",
@@ -584,6 +719,13 @@ document.addEventListener("DOMContentLoaded", function () {
                                         if (horariosEspecificos && horariosEspecificos.includes(horario)) {
                                             contenido += `<strong>${materia.nombre}</strong><br>`;
                                             contenido += `${subgrupo}<br>`; // Solo el código del subgrupo
+
+                                            // Agregar texto personalizado si existe
+                                            const textoPersonalizado = textosPersonalizados[codigo]?.[subgrupo];
+                                            if (textoPersonalizado) {
+                                                contenido += `${textoPersonalizado}<br>`;
+                                            }
+
                                             horariosCruzados.push({ materia: materia.nombre, subgrupo });
                                         }
                                     }
